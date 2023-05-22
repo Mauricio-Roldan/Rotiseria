@@ -1,6 +1,7 @@
 
 import React from 'react';
 import "../App.css";
+import Products from '../components/Products/Products';
 
 const Menu = () => {
   return (
@@ -9,10 +10,10 @@ const Menu = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '90vh'
+        height: '90vh',
       }}
     >
-      <h1>Menu</h1>
+      <Products/>
     </div>
   );
 };
