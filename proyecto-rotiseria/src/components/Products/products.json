@@ -1,0 +1,98 @@
+[
+    {
+        "Type": "Burger",
+        "Name": "CheeseBurger",
+        "Id": "CH33538UR63R",
+        "Price": 1500,
+        "Ingredients": [
+            "Doble Carne",
+            "Cheedar",
+            "Tomate",
+            "Cebolla",
+            "Lechuga",
+            "Aderezos"
+        ]
+    },
+    {
+        "Type": "Burger",
+        "Name": "KingBurger",
+        "Id": "K1N68UR63R",
+        "Price": 1500,
+        "Ingredients": [
+            "Doble Carne",
+            "Extra Cheedar",
+            "Tomate",
+            "Cebolla caramelizada",
+            "Lechuga",
+            "Aderezos"
+        ]
+    },
+    {
+        "Type": "Pizza",
+        "Name": "Doble Mozza",
+        "Id": "P1224D08L3M022A",
+        "Price": 1400,
+        "Ingredients": [
+            "Doble Mozzarella",
+            "Salsa de tomate",
+            "Cebolla"
+        ]
+    },
+    {
+        "Type": "Pizza",
+        "Name": "Pepperoni",
+        "Id": "P1224P3PP3R0N1",
+        "Price": 1700,
+        "Ingredients": [
+            "Mozzarella",
+            "Salsa de tomate",
+            "Pepperoni"
+        ]
+    },
+    {
+        "Type": "Pizza",
+        "Name": "Napolitana",
+        "Id": "P1224N4P0L174N4",
+        "Price": 1700,
+        "Ingredients": [
+            "Mozzarella",
+            "Salsa de tomate",
+            "Tomate"
+        ]
+    },
+    {
+        "Type": "Pizza",
+        "Name": "Margarita",
+        "Id": "P1224M4R64R17A",
+        "Price": 1800,
+        "Ingredients": [
+            "Mozzarella",
+            "Salsa de tomate",
+            "Tomate Cherry",
+            "Albahaca"
+        ]
+    },
+    {
+        "Type": "Pizza",
+        "Name": "Pollo BBQ",
+        "Id": "P1224P0LL088Q",
+        "Price": 1900,
+        "Ingredients": [
+            "Mozzarella",
+            "Salsa BBQ",
+            "Pollo",
+            "Cebolla"
+        ]
+    },
+    {
+        "Type": "Pizza",
+        "Name": "Fugazza",
+        "Id": "P1224FU64224",
+        "Price": 1400,
+        "Ingredients": [
+            "Doble Mozzarella",
+            "Doble Cebolla",
+            "Orégano"
+        ]
+    }
+]
