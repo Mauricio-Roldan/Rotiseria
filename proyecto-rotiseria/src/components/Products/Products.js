@@ -18,11 +18,9 @@ const Products = () => {
             console.log(type)
             return filteredProducts
         }
-        const setState =()=>(setFilteredProducts([...filteredProducts, 1]))
         return (
         <div>
             {unicos.map((item,index)=><button key={index} onClick={()=>selectedProduct(item)}>{item}</button>)}
-            <button onClick={setState}>setter</button>
             {filteredProducts.map((item, index)=>(<ul key={item.Id}>
                 <li><b>{item.Name}</b></li>
                 <li><b>Precio:</b>{item.Price}</li>
