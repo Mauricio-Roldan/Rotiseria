@@ -11,7 +11,6 @@ const About = () => {
         height: '90vh'
       }}
     >
-      <h1>About</h1>
       <AboutUs />
     </div>
   );

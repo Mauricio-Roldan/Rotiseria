@@ -17,12 +17,12 @@ function Navbar() {
       <IconContext.Provider value={{ color: "#fff"}}>
         <nav className="navbar">
           <div className="navbar-container container">
-           
+          
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img src={logo} alt="logo" height={90} width={90} className="navbar-logo-img"/>
             TUPizza
             </Link>
-           
+          
             <div className="menu-icon" onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </div>

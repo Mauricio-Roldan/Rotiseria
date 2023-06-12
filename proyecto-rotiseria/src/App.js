@@ -25,3 +25,6 @@ export default App;
 // cambiar precio
 // PUNTOS (opcional)
 // canjear puntos (opcional)
+// Botón THEME
+// CARRITO
+//

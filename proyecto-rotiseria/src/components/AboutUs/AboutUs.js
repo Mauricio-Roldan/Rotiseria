@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Accordion from 'react-bootstrap/Accordion';
 
 const AboutUs = () => {
   const [formData, setFormData] = useState({
@@ -13,7 +16,7 @@ const AboutUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(formData);
+    console.log(formData);
     // realizar alguna acción con los datos del formulario, enviarlos a  una API 
     // reiniciar el estado del formulario
     setFormData({
@@ -25,45 +28,28 @@ const AboutUs = () => {
 
   return (
     <div>
-      <h3>Contacto :</h3>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Nombre:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
-        <div>
-          <label htmlFor="email">E-mail:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
-        <div>
-          <label htmlFor="message">Mensaje:</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
-        <button type="submit">Enviar</button>
-      </form>
+      <Accordion defaultActiveKey="1">
+        <Accordion.Item eventKey="0">
+          <Accordion.Header>Formulario de Contacto</Accordion.Header>
+          <Accordion.Body>
+              <Form onSubmit={handleSubmit}>
+                <Form.Group className="mb-3" controlId="formBasicEmail" >
+                  <Form.Label>Nombre</Form.Label>
+                  <Form.Control type='text' name="name" placeholder='Ingrese su nombre' value={formData.name} onChange={handleChange} required/>
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control type="email" name="email" placeholder="name@example.com" value={formData.email} onChange={handleChange} required/>
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                  <Form.Label>Mensaje</Form.Label>
+                  <Form.Control as="textarea" name="message" rows={3} value={formData.message} onChange={handleChange} required/>
+                </Form.Group>
+                <Button variant="outline-primary" type='submit'>Primary</Button>
+              </Form>
+            </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
     </div>
   );
 };
