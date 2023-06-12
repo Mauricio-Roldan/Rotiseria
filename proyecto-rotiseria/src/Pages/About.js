@@ -1,6 +1,6 @@
 import React from 'react';
 import "../App.css";
-
+import AboutUs from '../components/AboutUs/AboutUs';
 const About = () => {
   return (
     <div
@@ -12,6 +12,7 @@ const About = () => {
       }}
     >
       <h1>About</h1>
+      <AboutUs />
     </div>
   );
 };
