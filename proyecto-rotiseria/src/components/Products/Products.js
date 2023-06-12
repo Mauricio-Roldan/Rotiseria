@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
 import products from './products.json'
+import Post from './Post';
 const Products = () => {
         const [filteredProducts, setFilteredProducts] = useState([])
-        const unicos = [];
+        const unique = [];
         for(var i = 0; i < products.length; i++) {
         
             const elemento = products[i].Type;
         
-            if (!unicos.includes(products[i].Type)) {
-            unicos.push(elemento);
+            if (!unique.includes(products[i].Type)) {
+            unique.push(elemento);
         }
 
         }
@@ -20,7 +24,13 @@ const Products = () => {
         }
         return (
         <div>
-            {unicos.map((item,index)=><button key={index} onClick={()=>selectedProduct(item)}>{item}</button>)}
+            <div>
+            <Container fluid>
+            <Row >
+                {unique.map(p=><Post key={p} name={p} btnName={p} func={()=>selectedProduct(p)} img={"https://i0.wp.com/cremigal.com/wp-content/uploads/2022/04/CREMIGAL-10-scaled.jpg?fit=960%2C640&ssl=1"}/>)}
+            </Row>
+            </Container>
+        </div>
             {filteredProducts.map((item, index)=>(<ul key={item.Id}>
                 <li><b>{item.Name}</b></li>
                 <li><b>Precio:</b>{item.Price}</li>
